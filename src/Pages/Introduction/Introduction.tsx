@@ -4,7 +4,7 @@ import * as FaIcon from 'react-icons/fa';
 function Introduction() {
   return (
     <div className='intro row mt-5'>
-      <div className='col-6 col-ms-12'>
+      <div className='col-sm-6'>
         <p>Hi, </p>
         <h2>I'm Mitchel Okomor</h2>
         <h4>FullStack Developer</h4>
@@ -22,7 +22,7 @@ function Introduction() {
           <FaIcon.FaTwitter />
         </div>
       </div>
-      <div className='col-6 col-ms-12'>right</div>
+      <div className='col-sm-6'>right</div>
     </div>
   );
 }

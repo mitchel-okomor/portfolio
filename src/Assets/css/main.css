@@ -51,11 +51,32 @@ Page Structure
 /*
 Header & Nav
 */
+.sidebar {
+  list-style-type: none;
+  border-left: var(--background-color2) solid 5px;
+}
+
+.sidebar > li:hover {
+  cursor: pointer;
+}
 
 /*
 Content & Media
 */
 
+.project-card {
+  width: 20rem;
+}
+.project-card .card-header ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: end;
+}
+
+.project-card .card-body {
+  display: grid;
+  place-items: center normal;
+}
 /*
 Footer
 */
