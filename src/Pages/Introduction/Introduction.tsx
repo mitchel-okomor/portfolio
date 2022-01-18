@@ -48,51 +48,51 @@ function Introduction() {
             View My Works
           </button>
         </div>
-        <div className='mt-5'>
-          <div className='row'>
-            <div className='col-sm-6'>
-              <h2 className=''>What I Do</h2>
-            </div>
-            <div className='col-sm-6 '></div>
+      </div>
+      <div className='col-sm-4 avatar'>
+        <img src={avatar} alt='avatar' />
+      </div>
+      <div className='mt-5'>
+        <div className='row'>
+          <div className='col-sm-6'>
+            <h2 className=''>What I Do</h2>
           </div>
-          <div className='row mt-3'>
-            <div className='col-sm-6 mt-3'>
-              <div className='row'>
-                <div className='col-2'>
-                  <FaIcon.FaDesktop style={{ fontSize: '2.5rem' }} />
-                </div>
-                <div className='col-10'>
-                  <h5 className=''>Frontend Development</h5>
-                  <p>
-                    I build scalable SPA with HTML, CSS, Bootstrap and ReactJS.
-                    I use UI Libries sush as Materia UI to speed up development
-                    time with their out of the box react Ui components
-                  </p>
-                </div>
+          <div className='col-sm-6 '></div>
+        </div>
+        <div className='row mt-3'>
+          <div className='col-sm-6 mt-3'>
+            <div className='row'>
+              <div className='col-2'>
+                <FaIcon.FaDesktop style={{ fontSize: '2.5rem' }} />
+              </div>
+              <div className='col-10'>
+                <h5 className='mb-3'>Frontend Development</h5>
+                <p>
+                  I build scalable SPA with HTML, CSS, Bootstrap and ReactJS. I
+                  use UI librarie such as Materia UI to speed up development
+                  time with their out of the box react Ui components
+                </p>
               </div>
             </div>
-            <div className='col-sm-6 mt-3'>
-              <div className='row'>
-                <div className='col-2'>
-                  <FaIcon.FaServer style={{ fontSize: '2.5rem' }} />
-                </div>
-                <div className='col-10'>
-                  <h5>Backend Development</h5>
-                  <p>
-                    I Build server side application (REST APIs) with NodeJS,
-                    Express, MongoDB and MySQl. I use Sequelize ORM to speedup
-                    the buildng database schema and also query the data. I use
-                    Jest testing library for automated tests and Postman for API
-                    documentation.
-                  </p>
-                </div>
+          </div>
+          <div className='col-sm-6 mt-3'>
+            <div className='row'>
+              <div className='col-2'>
+                <FaIcon.FaServer style={{ fontSize: '2.5rem' }} />
+              </div>
+              <div className='col-10'>
+                <h5 className='mb-3'>Backend Development</h5>
+                <p>
+                  I Build server side application (REST APIs) with NodeJS,
+                  Express, MongoDB and MySQl. I use Sequelize ORM to speedup the
+                  buildng database schema and also query the data. I use Jest
+                  testing library for automated tests and Postman for API
+                  documentation.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className='col-sm-4 avatar'>
-        <img src={avatar} alt='avatar' />
       </div>
     </div>
   );

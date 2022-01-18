@@ -41,6 +41,7 @@ p {
   font-size: 20px;
   line-height: 30px;
 }
+
 .page-btn {
   padding: 0.3rem;
   border-radius: 0.05rem;
@@ -82,6 +83,10 @@ Header & Nav
   background-color: var(--background-color) !important;
   min-height: 7rem !important;
 }
+.navbar a:hover {
+  background-color: var(--background-color2);
+  color: var(--background-color);
+}
 .darkmode-ms {
   display: none;
 }
@@ -118,7 +123,7 @@ Content & Media
 .project-card .project-card-header ul {
   display: flex;
   list-style-type: none;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .project-card .project-card-body {
@@ -127,6 +132,11 @@ Content & Media
 }
 .avatar2 {
   display: none;
+}
+.avatar {
+  margin-top: 3rem;
+  display: grid;
+  place-items: center normal;
 }
 .avatar img {
   width: 250px;

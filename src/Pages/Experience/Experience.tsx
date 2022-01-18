@@ -14,10 +14,10 @@ function Experience() {
         return (
           <div>
             <h4>
-              FullStack Engineer{' '}
+              FullStack Engineer
               <span className='text-danger'> @ Salesruby ltd</span>
             </h4>
-            <h5>February 2021 - Present</h5>
+            <h5 className='my-3'>February 2021 - Present</h5>
             <ul>
               <li>
                 Work with team members to set up application Frontend and
@@ -28,7 +28,7 @@ function Experience() {
                 Implement APIs to be consumed by the frontend, including
                 authentication and authorization.
               </li>
-              <li>Write automated tests for API endpoints.</li>
+              <li>Integrate Third party services e.g. Twilio</li>
               <li>
                 Setup frontend application with React and Redux and other tools.
               </li>
@@ -47,7 +47,7 @@ function Experience() {
               Frontend Engineer
               <span className='text-danger'> @ Jomed Inc</span>
             </h4>
-            <h5>Nov 2019 – Dec 2020</h5>
+            <h5 className='my-3'>Nov 2019 – Dec 2020</h5>
             <ul className='mt-3'>
               <li>
                 Translated UI figma designs to HTML and CSS Codes using ReactJS.

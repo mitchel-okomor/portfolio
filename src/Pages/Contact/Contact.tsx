@@ -25,7 +25,7 @@ function Contact() {
       <div className='col-sm-6'>
         <h1>Get in touch</h1>
         <p>
-          I'm currently open to fulltime and frelance opportunies. <br />{' '}
+          I'm currently open to fulltime and freelance opportunies. <br />{' '}
           However, if you have any question or request please use the form below{' '}
         </p>
         <div className='form-container'>
