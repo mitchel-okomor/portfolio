@@ -7,7 +7,10 @@ type SkillProp = {
 function SkillCard({ prop }: SkillProp) {
   const { name, icon } = prop;
   return (
-    <div className='text-center p-3'>
+    <div
+      className='text-center m-3 p-2 skill-card rounded'
+      style={{ cursor: 'pointer' }}
+    >
       {icon}
       <p>{name}</p>
     </div>

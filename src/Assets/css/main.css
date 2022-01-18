@@ -1,6 +1,11 @@
 @import url('./toggler.css');
+@import url('./progressbar.css');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
-/*Resets*/
+* {
+  font-family: 'Architects Daughter', cursive sans-serif;
+}
+
 :root {
   --font-color: #333;
   --background-color: #eee;
@@ -28,21 +33,38 @@ h1,
 h2,
 h3,
 h4,
-h5,
-p {
-  color: var(--link-color);
+h5 {
+  color: var(--font-color);
+  font-weight: 700;
 }
-
+p {
+  font-size: 20px;
+  line-height: 30px;
+}
 .page-btn {
   padding: 0.3rem;
   border-radius: 0.05rem;
-  background-color: var(--background-color);
+  background-color: var(--font-color);
+  color: var(--background-color);
+  border: none;
+  font-weight: 500;
 }
 
 .page-btn2 {
   padding: 0.3rem;
   border-radius: 0.05rem;
-  background-color: var(--background-color2);
+  border: var(--font-color) solid 2px;
+  font-weight: 500;
+}
+.page-btn:hover {
+  border: var(--font-color) solid 1px;
+  color: var(--background-color2);
+  background-color: #eee;
+}
+
+.page-btn2:hover {
+  background-color: var(--font-color);
+  color: var(--background-color2);
 }
 /*
 Page Structure
@@ -51,11 +73,31 @@ Page Structure
 /*
 Header & Nav
 */
+.nav-container {
+  background: transparent;
+}
+.navbar {
+  font-weight: bold;
+  font-size: x-large;
+  background-color: var(--background-color) !important;
+  min-height: 7rem !important;
+}
+.navbar-light .navbar-nav {
+  color: var(--font-color) !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--font-color);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  border-bottom: var(--background-color) solid 4px;
+}
 .sidebar {
   list-style-type: none;
-  border-left: var(--background-color2) solid 5px;
+  border-left: rgb(226, 61, 61) solid 5px;
 }
-
+.sidebar {
+  width: max-content;
+}
 .sidebar > li:hover {
   cursor: pointer;
 }
@@ -63,20 +105,64 @@ Header & Nav
 /*
 Content & Media
 */
-
+.name-intro {
+  font-size: 3rem;
+  font-weight: 900;
+}
 .project-card {
   width: 20rem;
 }
-.project-card .card-header ul {
+.project-card .project-card-header ul {
   display: flex;
   list-style-type: none;
   justify-content: end;
 }
 
-.project-card .card-body {
+.project-card .project-card-body {
   display: grid;
   place-items: center normal;
+}
+.avatar img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: var(--font-color) solid 4px;
+}
+
+.hor-line {
+  border-bottom: var(--font-color) solid 3px;
+}
+.skill-card {
+  background-color: rgba(163, 162, 162, 0.479);
+  min-width: 7rem;
+}
+
+.contact-form input,
+textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.contact-form input {
+  height: 3rem;
+}
+.form-container {
+  display: grid;
+  place-items: center normal;
+}
+.experience ul > li {
+  font-size: 18px;
 }
 /*
 Footer
 */
+
+/* 
+Media Queries
+*/
+@media screen and (max-width: 760px) {
+  .nav-container {
+    position: relative;
+  }
+}

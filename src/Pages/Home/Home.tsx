@@ -7,7 +7,7 @@ import Contact from '../Contact/Contact';
 
 function Home() {
   return (
-    <div className='container'>
+    <div className='container mb-5'>
       <Introduction />
       <Skills />
       <Experience />

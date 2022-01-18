@@ -48,25 +48,16 @@ function Experience() {
               <span className='text-danger'> @ Jomed Inc</span>
             </h4>
             <h5>Nov 2019 – Dec 2020</h5>
-            <ul>
+            <ul className='mt-3'>
               <li>
-                Work with team members to set up application Frontend and
-                Backend with necessary tools for development.
+                Translated UI figma designs to HTML and CSS Codes using ReactJS.
               </li>
-              <li>Design application database using Sequelize ORM.</li>
+              <li>Consumed backend APIs using axios and fetch API.</li>
+              <li>Implemented frontend user authentication.</li>
               <li>
-                Implement APIs to be consumed by the frontend, including
-                authentication and authorization.
+                Implemented frontend application logic with JavaScript (React)
+                SKILLS  HTML
               </li>
-              <li>Write automated tests for API endpoints.</li>
-              <li>
-                Setup frontend application with React and Redux and other tools.
-              </li>
-              <li>
-                Translate UI Figma designs to HTML and CSS Codes (Material UI
-                and Bootstrap required sometimes).
-              </li>
-              <li>Consume backend APIs in the frontend using ReactJS.</li>
             </ul>
           </div>
         );
@@ -76,13 +67,13 @@ function Experience() {
   };
 
   return (
-    <div className='mt-5'>
+    <div className='mt-5 experience'>
       <div>
         <h2>Work Experience</h2>
       </div>
-      <div className='row mt-3'>
+      <div className='row mt-4 '>
         <div className='col-sm-4'>
-          <Sidebar changeDisplay={changeDisplay} />
+          <Sidebar changeDisplay={changeDisplay} display={display} />
         </div>
         <div className='col-sm-8'>
           <ComponentToDisplay />

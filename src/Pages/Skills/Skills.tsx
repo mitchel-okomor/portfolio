@@ -6,50 +6,53 @@ function Skills() {
   const skills = [
     {
       name: 'javascript',
-      icon: <DevIcon.DiJavascript />
+      icon: <DevIcon.DiJavascript style={{ fontSize: '3rem' }} />
     },
     {
       name: 'Typescript',
-      icon: <DevIcon.DiTypo3 />
+      icon: <DevIcon.DiTypo3 style={{ fontSize: '3rem' }} />
     },
 
     {
       name: 'NodeJs',
-      icon: <DevIcon.DiNodejs />
+      icon: <DevIcon.DiNodejs style={{ fontSize: '3rem' }} />
     },
     {
       name: 'React',
-      icon: <DevIcon.DiReact />
+      icon: <DevIcon.DiReact style={{ fontSize: '3rem' }} />
     },
     {
       name: 'HTML',
-      icon: <DevIcon.DiHtml5 />
+      icon: <DevIcon.DiHtml5 style={{ fontSize: '3rem' }} />
     },
     {
       name: 'CSS',
-      icon: <DevIcon.DiCss3 />
+      icon: <DevIcon.DiCss3 style={{ fontSize: '3rem' }} />
     },
     {
       name: 'Bootstrap',
-      icon: <DevIcon.DiBootstrap />
+      icon: <DevIcon.DiBootstrap style={{ fontSize: '3rem' }} />
     },
     {
       name: 'Git',
-      icon: <DevIcon.DiGit />
+      icon: <DevIcon.DiGit style={{ fontSize: '3rem' }} />
     },
     {
       name: 'Github',
-      icon: <DevIcon.DiGithub />
+      icon: <DevIcon.DiGithub style={{ fontSize: '3rem' }} />
     }
   ];
 
   return (
     <div className='mt-5'>
-      <h2>Tools & Technologies I use</h2>
-      <div className='d-flex'>
-        {skills.map((item) => (
-          <SkillCard prop={item} key={item.name} />
-        ))}
+      <h2>Languages, Framworks & Tools</h2>
+      <div className='row'>
+        <div className='d-flex skill-cards flex-wrap col-sm-10'>
+          {skills.map((item) => (
+            <SkillCard prop={item} key={item.name} />
+          ))}
+        </div>
+        <div className='col-sm-2'></div>
       </div>
     </div>
   );

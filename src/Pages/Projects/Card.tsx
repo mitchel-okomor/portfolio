@@ -15,24 +15,24 @@ function Card({ project }: CardProps) {
   const { name, github, url, desc, image } = project;
   return (
     <div style={{ backgroundImage: image }} className='project-card'>
-      <div className='card-header'>
+      <div className='project-card-header'>
         <ul>
           <li>
             <a href={github} target='_blank' rel='noreferrer'>
-              <DevIcons.DiGithub style={{ fontSize: '2rem' }} />
+              <DevIcons.DiGithub style={{ fontSize: '1.7rem' }} />
             </a>
           </li>
           <li className='ml-3'>
             <a href={url} target='_blank' rel='noreferrer'>
-              <FaIcons.FaExternalLinkAlt style={{ fontSize: '1.5rem' }} />
+              <FaIcons.FaExternalLinkAlt style={{ fontSize: '1.2rem' }} />
             </a>
           </li>
         </ul>
       </div>
-      <div className='card-body'>
+      <div className='project-card-body'>
         <p className='text-center'>{name}</p>
       </div>
-      <div className='card-footer text-center'>{desc}</div>
+      <div className='project-card-footer text-center'>{desc}</div>
     </div>
   );
 }
