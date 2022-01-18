@@ -45,7 +45,7 @@ function Skills() {
 
   return (
     <div className='mt-5'>
-      <h2>Languages, Framworks & Tools</h2>
+      <h2>Languages, Framworks & Tools I use</h2>
       <div className='row'>
         <div className='d-flex skill-cards flex-wrap col-sm-10'>
           {skills.map((item) => (

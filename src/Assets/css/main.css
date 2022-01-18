@@ -1,9 +1,9 @@
 @import url('./toggler.css');
 @import url('./progressbar.css');
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Mochiy+Pop+P+One&family=Space+Mono:ital,wght@1,700&display=swap');
 
 * {
-  font-family: 'Architects Daughter', cursive sans-serif;
+  font-family: 'Mochiy Pop P One', sans-serif;
 }
 
 :root {
@@ -82,6 +82,9 @@ Header & Nav
   background-color: var(--background-color) !important;
   min-height: 7rem !important;
 }
+.darkmode-ms {
+  display: none;
+}
 .navbar-light .navbar-nav {
   color: var(--font-color) !important;
 }
@@ -122,9 +125,18 @@ Content & Media
   display: grid;
   place-items: center normal;
 }
+.avatar2 {
+  display: none;
+}
 .avatar img {
   width: 250px;
   height: 250px;
+  border-radius: 50%;
+  border: var(--font-color) solid 4px;
+}
+.avatar2 img {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: var(--font-color) solid 4px;
 }
@@ -134,7 +146,10 @@ Content & Media
 }
 .skill-card {
   background-color: rgba(163, 162, 162, 0.479);
-  min-width: 7rem;
+  width: 8rem;
+}
+.skill-card p {
+  font-size: 16px;
 }
 
 .contact-form input,
@@ -164,5 +179,21 @@ Media Queries
 @media screen and (max-width: 760px) {
   .nav-container {
     position: relative;
+  }
+  .navbar {
+    min-height: 1rem !important;
+  }
+  .avatar {
+    display: none;
+  }
+  .avatar2 {
+    display: grid;
+    place-items: center;
+  }
+  .darkmode-lg {
+    display: none;
+  }
+  .darkmode-ms {
+    display: block;
   }
 }

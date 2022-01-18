@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import DarkMode from '../../DarkMode';
 import ProgressBar from '../../ProgressBar';
 
@@ -8,17 +7,23 @@ function Navbar() {
     <div className='sticky-top nav-container'>
       <nav className='navbar navbar-expand-lg  navbar-light bg-light top-navbar'>
         <div className='container justify-content-between'>
-          <button
-            className='navbar-toggler'
-            type='button'
-            data-bs-toggle='collapse'
-            data-bs-target='#navbarText'
-            aria-controls='navbarText'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-          >
-            <span className='navbar-toggler-icon'></span>
-          </button>
+          <div className='d-flex justify-content-between w-100'>
+            <button
+              className='navbar-toggler'
+              type='button'
+              data-bs-toggle='collapse'
+              data-bs-target='#navbarText'
+              aria-controls='navbarText'
+              aria-expanded='false'
+              aria-label='Toggle navigation'
+            >
+              <span className='navbar-toggler-icon'></span>
+            </button>
+            <div className='darkmode-ms mx-4'>
+              <DarkMode />
+            </div>
+          </div>
+
           <div className='collapse navbar-collapse ' id='navbarText'>
             <ul className='navbar-nav me-auto mb-2 mb-lg-0 '>
               <li className='nav-item mx-2'>
@@ -47,7 +52,7 @@ function Navbar() {
                 </a>
               </li>
             </ul>
-            <div className=' mx-4'>
+            <div className='darkmode-lg mx-4'>
               <DarkMode />
             </div>
           </div>

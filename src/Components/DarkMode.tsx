@@ -1,6 +1,10 @@
-import { ChangeEventHandler } from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useState, useEffect } from 'react';
+import * as FaIcon from 'react-icons/fa';
 
 const DarkMode = () => {
+  const [theme, setTheme] = useState('');
+
   const setDark = () => {
     localStorage.setItem('theme', 'dark');
 
@@ -12,7 +16,7 @@ const DarkMode = () => {
     document.documentElement.setAttribute('data-theme', 'light');
   };
 
-  const storedTheme = localStorage.getItem('theme');
+  const storedTheme: string = localStorage.getItem('theme')!;
 
   const prefersDark =
     window.matchMedia &&
@@ -25,18 +29,28 @@ const DarkMode = () => {
     setDark();
   }
 
-  const toggleTheme: ChangeEventHandler<HTMLInputElement> = (e) => {
-    if (e.target.checked) {
+  const toggleTheme = () => {
+    if (storedTheme !== 'dark') {
       setDark();
+      setTheme('dark');
     } else {
       setLight();
+      setTheme('light');
     }
   };
 
+  useEffect(() => {
+    return () => {
+      setTheme(storedTheme);
+    };
+  }, []);
+
   return (
     <div className='toggle-theme-wrapper'>
-      <span>☀️</span>
-      <label className='toggle-theme' htmlFor='checkbox'>
+      <span style={{ cursor: 'pointer' }} onClick={toggleTheme}>
+        {theme === 'dark' ? <FaIcon.FaRegLightbulb /> : <FaIcon.FaLightbulb />}
+      </span>
+      {/* <label className='toggle-theme' htmlFor='checkbox'>
         <input
           type='checkbox'
           id='checkbox'
@@ -45,7 +59,7 @@ const DarkMode = () => {
         />
         <div className='slider round'></div>
       </label>
-      <span>🌒</span>
+      <span>🌒</span> */}
     </div>
   );
 };
