@@ -83,6 +83,7 @@ Header & Nav
   background-color: var(--background-color) !important;
   min-height: 7rem !important;
 }
+
 .navbar a:hover {
   background-color: var(--background-color2);
   color: var(--background-color);
@@ -119,7 +120,11 @@ Content & Media
 }
 .project-card {
   width: 20rem;
+  border: var(--font-color) solid 2px;
+  border-radius: 5px;
+  padding: 10px;
 }
+
 .project-card .project-card-header ul {
   display: flex;
   list-style-type: none;
@@ -178,6 +183,7 @@ textarea {
 }
 .experience ul > li {
   font-size: 18px;
+  margin-top: 9px;
 }
 /*
 Footer

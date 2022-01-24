@@ -1,8 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-//import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import * as FaIcon from 'react-icons/fa';
 
 const DarkMode = () => {
+  const [theme, setTheme] = useState('');
+
   const setDark = () => {
     localStorage.setItem('theme', 'dark');
 
@@ -30,10 +32,16 @@ const DarkMode = () => {
   const toggleTheme = () => {
     if (storedTheme !== 'dark') {
       setDark();
+      setTheme('dark');
     } else {
       setLight();
+      setTheme('light');
     }
   };
+
+  useEffect(() => {
+    setTheme(storedTheme);
+  }, []);
 
   return (
     <div className='toggle-theme-wrapper'>

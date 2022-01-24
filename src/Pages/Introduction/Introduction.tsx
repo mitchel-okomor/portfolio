@@ -12,9 +12,11 @@ function Introduction() {
         <h3>Hello, </h3>
         <h2 className='name-intro'>I'm Mitchel Okomor</h2>
         <h4 className='my-3'>Frontend Developer</h4>
-        <p className='mt-3'>
+        <p className='mt-5'>
           I'm a frontend developer based in Lagos, Nigeria. <br /> I enjoy
-          buiding things for the web.
+          building things for the web. although I know some backend basic, I
+          prefer working in the frontend while building resuable components and
+          folliwing good design patterns and principles.
         </p>
         <div>
           <a
@@ -69,8 +71,9 @@ function Introduction() {
                 <h5 className='mb-3'>Frontend Development</h5>
                 <p>
                   I build scalable SPA with HTML, CSS, Bootstrap and ReactJS. I
-                  use UI librarie such as Materia UI to speed up development
-                  time with their out of the box react Ui components
+                  use UI libraries such as Materia UI, React Boostrap to speed
+                  up development time with their out of the box react Ui
+                  components.
                 </p>
               </div>
             </div>

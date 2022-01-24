@@ -5,6 +5,14 @@ import ProgressBar from '../../ProgressBar';
 function Navbar() {
   return (
     <div className='sticky-top nav-container'>
+      <a
+        className='close-navbar-toggler collapsed'
+        data-toggle='collapse'
+        data-target='#navbarSupportedContent'
+        aria-controls='navbarSupportedContent'
+        aria-expanded='false'
+        aria-label='Toggle navigation'
+      ></a>
       <nav className='navbar navbar-expand-lg  navbar-light bg-light top-navbar'>
         <div className='container justify-content-between'>
           <div className='d-flex justify-content-between w-100'>

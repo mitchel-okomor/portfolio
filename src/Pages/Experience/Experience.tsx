@@ -56,7 +56,6 @@ function Experience() {
               <li>Implemented frontend user authentication.</li>
               <li>
                 Implemented frontend application logic with JavaScript (React)
-                SKILLS  HTML
               </li>
             </ul>
           </div>
